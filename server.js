@@ -39,9 +39,7 @@ const ItemSchema = new mongoose.Schema({
 
 const Item = mongoose.model("Item", ItemSchema);
 
-// ============================
 // CREAR (POST)
-// ============================
 
 app.post("/items", async (req, res) => {
     try {
@@ -82,9 +80,7 @@ app.post("/items", async (req, res) => {
     }
 });
 
-// ============================
-// LEER TODOS (GET)
-// ============================
+// LEER (GET)
 
 app.get("/items", async (req, res) => {
     try {
@@ -95,9 +91,7 @@ app.get("/items", async (req, res) => {
     }
 });
 
-// ============================
 // ACTUALIZAR (PUT)
-// ============================
 
 app.put("/items/:id", async (req, res) => {
     try {
@@ -130,9 +124,7 @@ app.put("/items/:id", async (req, res) => {
     }
 });
 
-// ============================
 // ELIMINAR (DELETE)
-// ============================
 
 app.delete("/items/:id", async (req, res) => {
     try {
@@ -158,7 +150,7 @@ app.delete("/items/:id", async (req, res) => {
 });
 
 
-// ============================
+//
 
 const PORT = process.env.PORT || 3000;
 

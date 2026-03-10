@@ -22,8 +22,7 @@ El sistema está compuesto por los siguientes servicios:
 
 Diagrama de Arquitectura
 
-imagen del dia![alt text](diagrama.png)grama
-
+imagen generada por Draw.io [](diagrama.png) 
 
 El sistema funciona dentro de una red Docker personalizada donde:
 
@@ -47,3 +46,19 @@ Se utiliza un volumen Docker:
 yaml
 volumes
 mongo_data
+
+Problemas encontrados
+
+-Conexión Mongo con localhost dentro de Docker
+-Manejo de errores en endpoints
+
+Mejoras implementadas
+
+-Healthcheck
+-Redis como servicio adicional
+
+Mejoras futuras
+
+-Implementar cache con Redis
+- istema de autenticación
+-Balanceador de carga
